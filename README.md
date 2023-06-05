@@ -12,3 +12,4 @@ This list is not by any means exhaustive and will change wildy over time :]
 ## Configuration List
 - alacritty
 - zsh
+- vscode
