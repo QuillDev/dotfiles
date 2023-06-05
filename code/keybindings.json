@@ -7,7 +7,6 @@
     },
     {
         "key": "ctrl+shift+t",
-        "command": "workbench.action.terminal.new",
-        "when": "editorTextFocus"
+        "command": "workbench.action.terminal.new"
     }
 ]
