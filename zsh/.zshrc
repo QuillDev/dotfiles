@@ -7,13 +7,13 @@
 export ZSH="$HOME/.oh-my-zsh" # install path
 
 # fix home and end keys
-bindkey  "^[[H"   beginning-of-line
-bindkey  "^[[F"   end-of-line
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
 
-ZSH_THEME="agnoster" # theme
+ZSH_THEME="agnoster"     # theme
 HIST_STAMPS="mm/dd/yyyy" # timestamps
 
-zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+zstyle ':omz:update' mode reminder # just remind me to update when it's time
 source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
