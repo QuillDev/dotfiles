@@ -15,3 +15,5 @@ ln -s -f $CUR_PATH/zsh/.zshrc ~/.zshrc
 echo "configuring vscode"
 echo "> installing keybindings.json"
 ln -s -f $CUR_PATH/code/keybindings.json ~/.config/Code/User/keybindings.json
+echo "> installing settings.json"
+ln -s -f $CUR_PATH/code/settings.json ~/.config/Code/User/settings.json
