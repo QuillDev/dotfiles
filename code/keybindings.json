@@ -1,12 +1,41 @@
-// Place your key bindings in this file to override the defaults
 [
-    {
-        "key": "ctrl+shift+g",
-        "command": "editor.action.formatDocument",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+t",
-        "command": "workbench.action.terminal.new"
-    }
+  /*
+   * Add new shortcuts
+   */
+
+  // Quick format current document
+  {
+    "key": "ctrl+shift+g",
+    "command": "editor.action.formatDocument",
+    "when": "editorTextFocus"
+  },
+  // open new terminal window
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  // kill terminal window
+  {
+    "key": "ctrl+shift+q",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  // quick fix
+  {
+    "key": "ctrl+1",
+    "command": "editor.action.quickFix"
+  },
+  /*
+   * Remove shortcuts that we do not use from base vscode
+   */
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "-editor.action.quickFix"
+  }
 ]
