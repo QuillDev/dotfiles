@@ -26,6 +26,11 @@
     "key": "ctrl+1",
     "command": "editor.action.quickFix"
   },
+  {
+    "key": "ctrl+shift+r",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
   /*
    * Remove shortcuts that we do not use from base vscode
    */
@@ -37,5 +42,10 @@
   {
     "key": "ctrl+.",
     "command": "-editor.action.quickFix"
+  },
+  {
+    "key": "f2",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   }
 ]
